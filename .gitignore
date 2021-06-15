@@ -1,0 +1,5 @@
+.env
+
+/boilerbotvenv/
+/.vscode/
+/__pycache__/
