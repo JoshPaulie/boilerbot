@@ -18,7 +18,7 @@ bot = commands.Bot(
 
 @bot.event
 async def on_ready():
-    print(f"{bot.user.name} is ready!")
+    print(f"{bot.user.name} is ready!")  # TODO add timestamp
 
 
 @bot.event
