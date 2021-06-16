@@ -1,5 +1,8 @@
 from pathlib import Path
 
+"""
+Functions used to load cogs during init.
+"""
 
 def collect_cogs():
     files = Path("cogs").rglob("*.py")

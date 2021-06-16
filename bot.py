@@ -10,7 +10,7 @@ from bot_init_functions import collect_cogs, load_cogs
 
 intents = discord.Intents(messages=True, guilds=True, reactions=True)
 bot = commands.Bot(
-    command_prefix=BotConfig.prefix,
+    command_prefix=BotConfig.prefix, # Set in bot_config.py
     case_insensitive=True,
     intents=intents,
 )

@@ -2,10 +2,11 @@
  
 Simple template bot for discord.py
 
-// TODO
-- Instructions
-- Env generator
+## TODO
+- Setup script
+- Basic cog and command
+- Basic on_message listener
+- Guides for getting discord token
 
-End goals:
-Easily manageable from within discord
-Add cogs, commands templates from discord?
+## End goals
+Simple boiler plate bot for discord.py with setup script
