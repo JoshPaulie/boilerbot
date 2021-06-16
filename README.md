@@ -1,4 +1,4 @@
-# boilerbot
+# boilerbot ♨️
  
 Simple template bot for discord.py
 
