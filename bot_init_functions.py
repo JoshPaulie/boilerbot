@@ -1,7 +1,8 @@
 from pathlib import Path
+from datetime import datetime
 
 """
-Functions used to load cogs during initialization
+Objects used to load cogs during initialization
 """
 
 
@@ -18,3 +19,6 @@ def load_cogs(bot):
             bot.load_extension(cog)
         except Exception as e:
             print(f"Failed to load cog {cog}\n{e}")
+
+
+launch_time = datetime.now().strftime("%H:%M %Y/%m/%d")
