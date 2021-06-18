@@ -10,7 +10,7 @@ from bot_init_functions import collect_cogs, load_cogs
 
 intents = discord.Intents(messages=True, guilds=True, reactions=True)
 bot = commands.Bot(
-    command_prefix=BotConfig.prefix, # Set in bot_config.py
+    command_prefix=BotConfig.prefix,
     case_insensitive=True,
     intents=intents,
 )
@@ -26,7 +26,12 @@ async def on_message(message):
     await bot.process_commands(message)
 
 
-load_dotenv(find_dotenv())
-collect_cogs()
-load_cogs(bot)
-bot.run(os.getenv("DISCORD"))
+env = find_dotenv()
+if env is None:
+    print("No .env was found. Refer to ./README.md")
+    exit()
+else:
+    load_dotenv(env)
+    collect_cogs()
+    load_cogs(bot)
+    bot.run(os.getenv("DISCORD"))

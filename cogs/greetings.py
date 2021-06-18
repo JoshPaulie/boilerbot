@@ -12,7 +12,8 @@ class Greetings(commands.Cog, name="Greetings!"):
     @commands.command(name="hello", aliases=["hi"])
     async def hello(self, ctx):
         """Sends a warm welcome! (Example command)"""
-        await ctx.send("Hello there! 👋")
+        name = ctx.message.author.name
+        await ctx.send(f"Hello there, {name}! 👋")
 
 
 def setup(bot):
