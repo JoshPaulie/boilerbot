@@ -17,6 +17,6 @@ Using a [venv](https://packaging.python.org/guides/installing-using-pip-and-virt
 
 Once created and activated, run `pip install -r requirements.txt` from the directory
 
-## Settings env file
+## Setting env file
 1) Rename the file `.env.example` to anything ending in `.env`
 2) Replace NULL with your discord token
