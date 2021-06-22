@@ -3,11 +3,11 @@
 # boilerbot ♨️
 Simple template (boilerplate) bot for discord.py
 
-## Intsallation
+## Download & Usage
 **Varies between OS**
-1) Clone repo to directory (Replace **\<your bot name>** whatever you'd like your directory to be named. Otherwise it will be named boilerbot)
+1) Clone repo. Since you don't want your directory named boilerbot, replace \<bot name> with your bot name.
 
-    `git clone https://github.com/JoshPaulie/boilerbot.git <your bot name>`
+    `git clone https://github.com/JoshPaulie/boilerbot.git <bot name>`
 
 2) Rename your .env file and set your [discord token](https://www.writebots.com/discord-bot-token/) variable
 
