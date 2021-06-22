@@ -5,7 +5,7 @@ from discord.ext import commands
 from dotenv import find_dotenv, load_dotenv
 
 from bot_config import BotConfig
-from bot_init_functions import collect_cogs, load_cogs, launch_time
+from init_functions import collect_cogs, load_cogs, launch_time
 
 intents = discord.Intents(messages=True, guilds=True, reactions=True)
 bot = commands.Bot(
