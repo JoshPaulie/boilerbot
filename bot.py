@@ -5,7 +5,8 @@ from discord.ext import commands
 from dotenv import find_dotenv, load_dotenv
 
 from bot_config import BotConfig
-from init_functions import collect_cogs, load_cogs, launch_time
+from bot_init import collect_cogs, load_cogs, timestamp
+
 
 intents = discord.Intents(messages=True, guilds=True, reactions=True)
 bot = commands.Bot(
@@ -17,11 +18,14 @@ bot = commands.Bot(
 
 @bot.event
 async def on_ready():
-    print(f"{bot.user.name} is ready! [{launch_time}]")
+    """Event that runs when bot has successfully connected"""
+    print(f"{bot.user.name} is ready! [{timestamp}]")
+    await bot.change_presence(activity=discord.Game(name=BotConfig.status))
 
 
 @bot.event
 async def on_message(message):
+    """Event that checks every message for possible commands"""
     await bot.process_commands(message)
 
 
