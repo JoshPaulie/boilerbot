@@ -3,7 +3,7 @@
 # boilerbot ♨️
 Simple template (boilerplate) bot for discord.py
 
-## Intsallation
+## Download & Usage
 **Varies between OS**
 1) Clone repo to directory (Replace **\<your bot name>** whatever you'd like your directory to be named. Otherwise it will be named boilerbot)
 
