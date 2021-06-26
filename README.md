@@ -10,7 +10,9 @@ Simple template (boilerplate) bot for discord.py
 
 2) [Rename](#setting-env-file) your .env file and set your [discord token](https://www.writebots.com/discord-bot-token/) variable
 
-3) Run the bot.py to start bot
+3) If using one, create and activate your virtual enviornment. Then install the required packages.
+
+4) Run the bot.py to start bot
 
 ## Virtual Environment (venv)
 Using a [venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) is **highly recommended**
