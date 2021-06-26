@@ -1,5 +1,5 @@
 from discord.ext import commands
-from bot_init import timestamp
+from modules.bot_init import timestamp
 
 
 class ListenersEvents(commands.Cog):
