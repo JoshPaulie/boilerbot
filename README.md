@@ -1,7 +1,7 @@
 [//]: <> (After cloning, delete this and make your own readme!)
 
 # boilerbot ♨️
-Simple template (boilerplate) bot for discord.py
+Simple template (boilerplate) bot for discord.py.  Easy and no fluff. Uses cogs and commands, with sample command and event. 🤍
 
 ## Download & Usage
 1) Clone repo. Since you don't want your directory named boilerbot, replace \<bot name> with your bot name.
